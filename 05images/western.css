@@ -1,0 +1,130 @@
+body {
+    font-family : 'Oxygen', sans-serif;
+    font-size : 16px;
+    font-weight : 300;
+    margin : 0;
+}
+/* header stuff here*/
+header {
+    background-color: #885455;
+    padding: 1rem 2vw;
+}
+header h1 {
+    margin: 0;
+    color: #ffb391;
+}
+header p {
+    margin: 0;
+    color: #ffb391;
+    letter-spacing: 0;
+}
+/* nav stuff goes here*/
+nav { 
+    background-color: #081942;
+    }
+nav ul{
+    list-style-type: none;
+    padding: 0 2vw;
+    margin: 0;
+    display: flex;
+}
+nav a{
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #db7281;
+    font-weight: 700;
+    display: block;
+    padding: .83rem 2rem;
+}
+nav li.active a{
+    background-color: #ffb391;
+        color: #db7281;
+}
+nav a:hover {
+    color: #fff;
+}
+/* stuff for the main*/
+main {
+    padding: 1rem 2vw;
+}
+main h1 {
+    color: #db7281;
+}
+main h2 {
+    color: #db7281;
+    margin-bottom: .2rem;
+}
+main p {
+    color: #081942;
+    margin: 0 0 .3rem 0;
+}
+main ol {
+    padding: .5rem 3vw;
+    background-color: #ffb391;
+}
+main dl dt {
+    color: #081942;
+    font-weight: 700;
+}
+main dl dd {
+    color: #081942;
+    font-size: .9rem;
+}
+main ul {
+    list-style-type: circle;
+}
+main ul li {
+    line-height: 125%;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+}
+main address {
+    font-style: normal;
+    background-color: #885455;
+    padding: .5rem;
+    width: 12.5rem;
+    border: 3px solid #081942;
+    border-radius: .5rem;
+}
+main a {
+    color: #081942
+}
+main a:hover {
+    color: rgb(239,0,24)
+}
+figure.wrapped {
+    width: 30%;
+    margin: 0 0 0 2%;
+    float: right;
+}
+figure.wrapped rodeo-img {
+    width: 100%;
+    height: auto;
+}
+figure.wrapped figcaption {
+    text-align: center;
+    font-size.75rem;
+    }
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+div.gallery figure {
+    margin: .5rem 2% 0 0;
+}
+div.gallery figcaption {
+    text-align: center;
+    font-size: .8rem;
+    color: #885455;
+}
+/*stuff for footer*/
+footer {
+    background-color: #885455;
+    text-align: center;
+    color: #ffb391;
+    padding: 1rem 0;
+    font-size: .8rem;
+}
+footer a {
+    color: #ffb391;
+}
