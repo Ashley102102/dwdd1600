@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Fast, paced, adrenaline seeking sport"/>
+    <meta name="author" content="Ashley Barratt"> 
+    <meta name="viewport" content="width=device-width, inital-scale=1">
+<title>Rodeo Time: Home</title>
+    <link rel="stylesheet" href="western.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <!-- start the page header -->
+    <header>
+        <h1>Rodeo Time!</h1>
+        <p>Fast Paced, Adrenaline Seeking Sport!</p>
+    </header>
+    <!-- start the page navagation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">History/about Rodeo</a></li>
+            <li><a href="rodeos.html">Rodeos</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li class="active"><a href="tickets.html">Tickets</a></li>
+        </ul>
+    </nav>
+    <!-- start of page main -->
+    <main>
+        <h1>Ticket Delivery</h1>
+        <form method="get" class="myForm" action="thanks.html">
+        <fieldset>
+            <legend>Customer Information</legend>
+            <label>First Name*<input type="text" name="fname" required></label>
+            <label>Last Name*<input type="text" name="lname" required></label>
+            <label>Cell number*<input type="tel" name="phone" required placeholder="999-777-5555"></label>
+            <label>Email*<input type="email" name="email" required placeholder="example@gmail.com"></label>
+        </fieldset>
+        <fieldset>
+            <legend>Delivery Method</legend>    
+            <label><input type="radio" name="method" value="car">By Car (2hr)</label>
+            <label><input type="radio" name="method" value="cycle">Motorcycle Delivery (4hrs)</label>
+            <label><input type="radio" name="method" value="horseback">Horseback  (6 hrs)</label>
+        </fieldset> 
+        <fieldset>
+            <legend>Delivery Options</legend>  
+            <label><input type="checkbox" name="porch" value="chosen"> Front Porch</label>
+            <label><input type="checkbox" name="deck" value="chosen"> Back Deck</label>
+            <label><input type="checkbox" name="driveway" value="chosen"> Driveway</label>
+            <label><input type="checkbox" name="garage" value="chosen"> Inside the Garage</label>
+            
+            <label>Preferred Delivery Time
+                <select name="time">
+                    <option value="none">Please Select</option>
+                    <option value="morning">Between 7:00am and 11:00am</option>
+                    <option value="noon">Between 11:00am and 2:00pm</option>
+                    <option value="afternoon">Between 2:00pm and 5:00pm</option>
+                    <option value="evening">Between 5:00pm and 8:00pm</option>
+                </select>
+            </label>
+        </fieldset>
+            <label>Comments
+                <textarea name="comments"></textarea>
+            </label>
+        <input type="submit" value="Send Delivery Request">
+        </form>
+    </main>
+    <!-- start the page footer -->
+    <footer>
+        <p>&copy; 2024 Ashley Barratt &bull; <a href="mailto:barraash000@gmail.com">Email Us</a></p>
+    </footer>
+</body>
+</html>
